@@ -13,6 +13,8 @@
   <meta http-equiv="content-language" content="pl">
   <link rel="canonical" href="https://www.gadomskikancelaria.pl/">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="w3images/sygnet-icon.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="w3images/sygnet-icon.png">
 
   <!-- ============ GEO-TAGI ============ -->
   <meta name="geo.region" content="PL-08">
@@ -211,12 +213,16 @@
       margin-right: auto;
     }
     .nav-logo-link img {
-      height: 44px;
+      height: 42px;
       width: auto;
       object-fit: contain;
-      transition: opacity var(--tr);
+      transition: opacity var(--tr), transform var(--tr);
+      filter: drop-shadow(0 0 6px rgba(203,178,106,.25));
     }
-    .nav-logo-link img:hover { opacity: .85; }
+    .nav-logo-link img:hover {
+      opacity: .9;
+      transform: scale(1.05);
+    }
 
     .nav-links {
       display: flex;
@@ -879,7 +885,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#home" class="nav-logo-link" aria-label="Strona główna – Kancelaria Adwokacka Kamil Gadomski">
-        <img src="./w3images/logo.png" alt="Logo Kancelarii Adwokackiej Kamil Gadomski">
+        <img src="./w3images/sygnet.png" alt="Sygnet Kancelarii Adwokackiej Kamil Gadomski">
       </a>
       <div class="nav-links">
         <a href="#corobimy"><i class="fa fa-superpowers"></i> Co robimy?</a>
